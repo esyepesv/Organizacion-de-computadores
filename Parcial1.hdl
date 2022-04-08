@@ -1,0 +1,44 @@
+/*
+Considere que desea hacer un circuito que realiza tres operaciones:
+	F = (A+B'+C)
+	F = (B+C'+D)
+	F = (A+B'+C)(B+C'+D)
+    *recuerde que el apóstrofo (Signo ortográfico auxiliar en forma de coma alta ’ ) es negación
+*/
+
+/*
+    if (f == 1)  set out = (A+B'+C)
+    if (f == 0)  set out = (B+C'+D)
+    if (mul == 1) set out = (A+B'+C)(B+C'+D)
+*/
+
+CHIP Parcial1 {
+    
+    IN a[16], b[16], c[16], d[16],  // 16-bit inputs  
+        f,  // (A+B'+C) (if 1) or (B+C'+D) (if 0)
+        mul; // (A+B'+C)(B+C'+D) (if 1)
+
+    OUT out[16]; // 16-bit output
+
+    PARTS:
+    // Put your code here:
+    
+    Not16(in=b, out=negb);  // B'
+    Not16(in=c, out=negc);  // C'
+
+    //(A+B'+C)
+    Add16(a=a, b=negb, out=sumab);
+    Add16(a=sumab, b=c, out=sum1);
+    
+    //(B+C'+D)
+    Add16(a=b, b=negc, out=sumbc);
+    Add16(a=sumbc, b=d, out=sum2);
+
+    //(A+B'+C)(B+C'+D)
+    Mul(a=sum1, b=sum2, out=mul12);
+
+    //seleccion de la funcion
+    Mux16(a=sum2, b=sum1, sel=f, out=out1);
+    Mux16(a=out1, b=mul12, sel=mul, out=out);
+
+}

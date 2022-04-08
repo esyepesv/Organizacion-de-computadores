@@ -1,0 +1,7 @@
+// 5+3
+@5
+D=A
+@3
+D=D+A
+@7   // POCISION DE MEMORIA
+M=D
