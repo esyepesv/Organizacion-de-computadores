@@ -1,0 +1,6 @@
+RAM
+0:15 registros de control
+16:255 variables static
+256:2047 definido para el stack
+2048:16483 Heap (objetos y colecciones "listas")
+16482:24575 monitor, teclado ... I/O 

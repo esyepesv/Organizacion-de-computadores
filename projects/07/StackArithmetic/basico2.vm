@@ -1,0 +1,28 @@
+funtion mult 2
+    push constant 0
+    pop local 0              // suma = 0
+    push argument 1
+    pop local 1              // j = y
+label loop
+    push constant 0
+    push local 1
+    eq                      // si j==0? termina
+    if-goto end
+    push local 0
+    push argument 0
+    add                     // suma = suma + x
+    pop local 0
+    push local 1
+    sub                     // j=j-1
+    pop local 0
+    push local 1
+    goto loop
+
+label end
+    push local 0
+    return
+
+//programa
+push constant 2
+push constant 4
+call mult 2

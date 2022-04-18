@@ -1,0 +1,5 @@
+push constant 3
+push constant 6
+push constant 9
+pop local 0 
+pop local 1
