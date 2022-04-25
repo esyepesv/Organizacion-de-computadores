@@ -11,18 +11,7 @@
 
 // Put your code here.
 
-// 5*3
 
-@5
-D=A 
-@1
-M=D
-@3
-D=A 
-@R2
-M=D
-@0
-M=D
 @2
 M=0
 (loop)
@@ -30,9 +19,7 @@ M=0
     D=M 
     @fin
     D;JEQ // R1 == 0
-
-    @2
-    D=M
+          // D;JEQ -> if D = 0 jump to fin
 
     @0
     D=M 
@@ -47,6 +34,15 @@ M=0
 
 (fin)
 0;JMP
+
+
+// D;JGT // if D > 0 jump
+//D;JGE // if D ≥ 0 jump
+//D;JLT // if D < 0 jump
+//D;JLE // if D ≤ 0 jump
+//D;JEQ // if D = 0 jump
+//D;JNE // if D ≠ 0 jump
+//0;JMP // jump
 
 
 
