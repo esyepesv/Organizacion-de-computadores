@@ -1,0 +1,18 @@
+El reto es construir un programa, puede ser en ASM o VM,
+que permita escribir por teclado solo palabras que contengan
+una de las tres primera letras de su nombre, si tiene letras
+repetidas como es el caso de ANA, se tomará la siguiente letra
+diferente del nombre, segundo nombre o primer apellido.
+
+Por ejemplo: Si me llamo EDIson, el programa solo permite digitar
+las letras E, D y I las veces que el usuario las digite.
+
+El criterio de evaluación es:
+
+100% logrando todo el reto
+80% si se muestran las letras pero estas salen en la misma posición,
+     no formado palabras, es decir, sobreescribiendo las letras
+60% solo se logra dos letras
+40% solo se logra una letra
+20% no se logra que funcione correctamente
+0% no se presenta.

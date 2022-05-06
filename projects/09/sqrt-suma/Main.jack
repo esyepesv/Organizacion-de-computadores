@@ -1,0 +1,14 @@
+class Main {
+    function void main() {
+
+       let a = Keyboard.readInt("primer numero: ");
+       let b = Keyboard.readInt("segundo numero: ");
+
+       let suma = a+b;
+        
+       let raiz = Math.sqrt(suma)
+
+       do Output.printInt(raiz);
+       return;
+    }
+ }

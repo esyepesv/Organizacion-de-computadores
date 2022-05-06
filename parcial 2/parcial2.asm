@@ -7,10 +7,6 @@
 D = A
 @mov_screen // movimiento en la linea
 M = D
-@32
-D = D+A
-@linea     // salto de linea   
-M=D
 
 @LEER_TECLA
 0;JMP
@@ -161,7 +157,7 @@ M=D
     M = M + D
 
     //pintamos la posicion agregando el valor 7
-    @3
+    @7
     D = A
     @posicion
     A = M
@@ -174,7 +170,7 @@ M=D
     M = M + D
 
     //pintamos la posicion agregando el valor 7
-    @3
+    @7
     D = A
     @posicion
     A = M
@@ -187,7 +183,7 @@ M=D
     M = M + D
 
     //pintamos la posicion agregando el valor 7
-    @3
+    @7
     D = A
     @posicion
     A = M
