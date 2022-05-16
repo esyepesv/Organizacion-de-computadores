@@ -260,8 +260,13 @@ M = D
     A = M
     M = D
 
+    @32
+    D = A
+    @posicion
+    M = M + D
+
     //pintamos la posicion agregando el valor 960
-    @960
+    @30
     D = A
     @posicion
     A = M
@@ -274,7 +279,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @30
     D = A
     @posicion
     A = M
@@ -287,14 +292,19 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @30
     D = A
     @posicion
     A = M
     M = D
 
+    @32
+    D = A
+    @posicion
+    M = M + D
+
     //pintamos la posicion agregando el valor 960
-    @960
+    @30
     D = A
     @posicion
     A = M
@@ -307,7 +317,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @30
     D = A
     @posicion
     A = M
@@ -320,7 +330,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @30
     D = A
     @posicion
     A = M
@@ -333,7 +343,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @30
     D = A
     @posicion
     A = M
@@ -346,7 +356,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @30
     D = A
     @posicion
     A = M
@@ -359,7 +369,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @28702
     D = A
     @posicion
     A = M
@@ -372,7 +382,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @28702
     D = A
     @posicion
     A = M
@@ -385,7 +395,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @32766
     D = A
     @posicion
     A = M
@@ -398,7 +408,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @32766
     D = A
     @posicion
     A = M
@@ -411,7 +421,7 @@ M = D
     M = M + D
 
     //pintamos la posicion agregando el valor 960
-    @960
+    @32766
     D = A
     @posicion
     A = M
