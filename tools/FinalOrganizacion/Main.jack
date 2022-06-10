@@ -1,0 +1,15 @@
+/*
+Reto final organizacion de  computadores
+Stiven Yepes Vanegas
+*/
+class Main {
+    function void main() {
+        
+        // se tomo como base una implementacion del juego Space Invader
+        var Game game;
+        let game = Game.new();
+        do game.run();
+        do game.dispose();
+        return;
+    }
+}
